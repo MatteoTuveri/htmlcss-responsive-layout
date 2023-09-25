@@ -282,3 +282,13 @@ main {
 #get-started a {
     text-decoration: underline;
 }
+
+/*FOOTER SETTINGS*/
+footer{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+footer a{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
