@@ -7,12 +7,12 @@
 
 :root {
     --debug: black;
-    --color-secondary-color: #0084FD;
-    --color-dark-color: #333333;
-    --color-light-color: #FFFFFF;
-    --color-primary-color: #9792E4;
-    --color-bg-card: #B5DDFF;
-    --color-contrast-color: #FCC060;
+    --secondary-color: #0084FD;
+    --dark-color: #333333;
+    --light-color: #FFFFFF;
+    --primary-color: #9792E4;
+    --bg-card: #B5DDFF;
+    --contrast-color: #FCC060;
     --color-text: #424242;
 }
 
@@ -22,8 +22,8 @@
 }
 
 body {
-    font-size: 1.4em;
-    line-height: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.8em;
 }
 
 .py-20 {
@@ -54,6 +54,10 @@ body {
     text-align: center;
 }
 
+.t-align-left {
+    text-align: left;
+}
+
 img {
     display: block;
     width: 100%;
@@ -65,7 +69,7 @@ a {
 }
 
 .container {
-    min-width: 550px;
+    min-width: 480px;
 }
 
 .btn {
@@ -74,10 +78,16 @@ a {
 
 }
 
-.second-btn {
+.secondary-btn {
     display: inline-block;
-    background-color: var(--color-secondary-color);
-    color: var(--color-light-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.third-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .cards-border {
@@ -94,6 +104,11 @@ a {
     flex-direction: row;
 }
 
+.f-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .j-content-between {
     justify-content: space-between;
 }
@@ -104,13 +119,13 @@ a {
 
 /*HEADER SETTINGS*/
 header {
-    background-color: var(--color-secondary-color);
-    color: var(--color-light-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
     position: fixed;
     z-index: 1000;
     width: 100%;
     height: 80px;
-    min-width: 550px;
+    min-width: 480px;
 }
 
 nav {
@@ -132,74 +147,114 @@ header ul {
 
 /*MAIN SETTINGS*/
 main {
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
-/*GET-STARTED SECTION SETTINGS*/
-.get-started-cards {
-    background-color: var(--color-bg-card);
-    color: var(--color-text);
+/*PRESENTATION SECTION SETTINGS*/
+#presentation h2 {
+    color: var(--secondary-color);
 }
 
-.get-started-cards h2 {
-    color: var(--color-secondary-color);
+.bg-presentation-card {
+    background-color: var(--bg-card);
+}
+
+.phone-img {
+    bottom: -20px;
 }
 
 .cards-icon {
-    color: var(--color-secondary-color);
+    color: var(--secondary-color);
     font-size: 4em;
-}
-
-.card-image {
-    bottom: -20px;
 }
 
 /*PLANNING SECTION SETTINGS*/
 #planning {
-    background-color: var(--color-primary-color);
-}
-
-#planning h2,
-#planning p {
-    color: var(--color-light-color);
+    background-color: var(--primary-color);
 }
 
 #planning .cards-border {
-    background-color: var(--color-light-color);
-}
-
-#planning .cards-border h2 {
-    color: black;
-}
-
-#planning .cards-border p {
-    color: black;
-    font-style: italic;
+    background-color: var(--light-color);
 }
 
 #planning .circle-border {
     display: inline-block;
-    background-color: var(--color-primary-color);
     padding: 10px 20px;
-    color: black;
+    background-color: var(--primary-color);
 }
 
+
 /*TESTIMONIALS SECTION SETTINGS*/
-#testimonials h2{
-    color: var(--color-primary-color);
+#testimonials h2 {
+    color: var(--primary-color);
 }
-#testimonials h4{
-    font-weight: lighter;
+
+#testimonials .cards-border {
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
-.testimonials-card{
-    background-color: var(--color-primary-color);
-    color: var(--color-light-color);
+
+#testimonials img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
 }
-.testimonials-img{
-    width: 40vw;
-    height: 40vw;
-    background-image: url(../Img/testimonial1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 20px auto;
+
+.testimonial-img {
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
+/*FEATURES SECTION SETTINGS*/
+#features {
+    background-color: var(--primary-color);
+}
+
+#features h2 {
+    color: var(--light-color);
+}
+
+#features .cards-border {
+    background-color: var(--light-color);
+}
+
+#features h3 {
+    font-size: 3em;
+    color: var(--primary-color);
+}
+
+#features h4 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+/*ABOUT US SECTION SETTINGS*/
+#about-us h2 {
+    color: var(--primary-color);
+    font-size: 3em;
+}
+
+#about-us h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+#about-us img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+}
+
+.about-us-img {
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
+/*GET STARTED SECTION SETTINGS*/
+#get-started {
+    background-color: var(--primary-color);
 }
