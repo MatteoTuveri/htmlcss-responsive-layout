@@ -22,7 +22,7 @@
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.5em;
 }
 
@@ -182,4 +182,24 @@ main {
     background-color: var(--color-primary-color);
     padding: 10px 20px;
     color: black;
+}
+
+/*TESTIMONIALS SECTION SETTINGS*/
+#testimonials h2{
+    color: var(--color-primary-color);
+}
+#testimonials h4{
+    font-weight: lighter;
+}
+.testimonials-card{
+    background-color: var(--color-primary-color);
+    color: var(--color-light-color);
+}
+.testimonials-img{
+    width: 40vw;
+    height: 40vw;
+    background-image: url(../Img/testimonial1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
 }
