@@ -6,7 +6,7 @@
 }
 
 :root {
-    --debug: none;
+    --debug: black;
     --color-secondary-color: #0084FD;
     --color-dark-color: #333333;
     --color-light-color: #FFFFFF;
@@ -20,10 +20,12 @@
 .debug {
     border: 1px solid var(--debug);
 }
-body{
-    font-size: 1.7em;
+
+body {
+    font-size: 1.5em;
     line-height: 1.5em;
 }
+
 .py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -33,6 +35,7 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -43,11 +46,11 @@ body{
     padding-right: 40px;
 }
 
-.p-relative{
+.p-relative {
     position: relative;
 }
 
-.t-align-center{
+.t-align-center {
     text-align: center;
 }
 
@@ -56,39 +59,46 @@ img {
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.container{
-    min-width: 480px;
+.container {
+    min-width: 550px;
 }
 
-.btn{
+.btn {
     padding: 2px 50px;
     border-radius: 50px;
-    
-}
-.second-btn{
-    display: inline-block;
-    background-color: var(--color-secondary-color);
-    color:var(--color-light-color);
+
 }
 
-.cards-border{
+.second-btn {
+    display: inline-block;
+    background-color: var(--color-secondary-color);
+    color: var(--color-light-color);
+}
+
+.cards-border {
     border-radius: 25px;
 }
 
+.circle-border {
+    border-radius: 50%;
+}
+
 /* FLEX SETTINGS */
-.f-row{
+.f-row {
     display: flex;
     flex-direction: row;
 }
-.j-content-between{
+
+.j-content-between {
     justify-content: space-between;
 }
-.a-items-center{
+
+.a-items-center {
     align-items: center;
 }
 
@@ -100,37 +110,76 @@ header {
     z-index: 1000;
     width: 100%;
     height: 80px;
-    min-width: 480px;
+    min-width: 550px;
 }
-nav{
+
+nav {
     height: 100%;
 }
+
 header ul {
     list-style: none;
 }
-.options{
+
+.options {
     display: none;
 }
+
 .img-size {
     max-width: 200px;
 
 }
 
 /*MAIN SETTINGS*/
-main{
+main {
     padding-top: 90px;
 }
-.planning-cards{
+
+/*GET-STARTED SECTION SETTINGS*/
+.get-started-cards {
     background-color: var(--color-bg-card);
     color: var(--color-text);
 }
-.planning-cards h2 {
+
+.get-started-cards h2 {
     color: var(--color-secondary-color);
 }
-.cards-icon{
+
+.cards-icon {
     color: var(--color-secondary-color);
     font-size: 4em;
 }
-.card-image{
+
+.card-image {
     bottom: -20px;
+}
+
+/*PLANNING SECTION SETTINGS*/
+#planning {
+    background-color: var(--color-primary-color);
+}
+
+#planning h2,
+#planning p {
+    color: var(--color-light-color);
+}
+
+#planning .cards-border {
+    background-color: var(--color-light-color);
+}
+
+#planning .cards-border h2 {
+    color: black;
+}
+
+#planning .cards-border p {
+    color: black;
+    font-style: italic;
+}
+
+#planning .circle-border {
+    display: inline-block;
+    background-color: var(--color-primary-color);
+    padding: 10px 20px;
+    color: black;
 }
