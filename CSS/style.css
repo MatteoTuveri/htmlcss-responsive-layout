@@ -175,7 +175,7 @@ main {
     background-color: var(--bg-card);
 }
 
-.phone-img {
+.phone-img img {
     bottom: -20px;
 }
 
@@ -337,6 +337,9 @@ footer a{
     .about-us-size{
         width: 50%;
     }
+    .bg-presentation-card{
+        justify-content: space-between;
+    }
 }
 @media screen and (min-width:1080px) {
     .container{
@@ -366,5 +369,8 @@ footer a{
     }
     .burger-menu{
         display: none;
+    }
+    .bg-presentation-card{
+        justify-content: space-between;
     }
 }
