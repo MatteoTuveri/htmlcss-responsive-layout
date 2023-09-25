@@ -6,7 +6,7 @@
 }
 
 :root {
-    --debug: black;
+    --debug: none;
     --color-secondary-color: #0084FD;
     --color-dark-color: #333333;
     --color-light-color: #FFFFFF;
@@ -45,9 +45,22 @@ img {
     width: 100%;
 }
 
+/* FLEX SETTINGS */
+.f-row{
+    display: flex;
+    flex-direction: row;
+}
+.j-content-between{
+    justify-content: space-between;
+}
+.a-items-center{
+    align-items: center;
+}
+
 /*HEADER SETTINGS*/
 header {
     background-color: var(--color-secondary-color);
+    color: var(--color-light-color);
     position: fixed;
     z-index: 1000;
     width: 100%;
