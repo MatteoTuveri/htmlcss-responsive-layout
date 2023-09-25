@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 :root {
-    --debug: black;
+    --debug: none;
     --secondary-color: #0084FD;
     --dark-color: #333333;
     --light-color: #FFFFFF;
@@ -78,7 +81,8 @@ a {
     border-radius: 50px;
 
 }
-.primary-btn{
+
+.primary-btn {
     background-color: var(--light-color);
     color: black;
     display: block;
@@ -148,7 +152,8 @@ header ul {
     list-style: none;
     height: 100%;
 }
-header li{
+
+header li {
     height: 100%;
 }
 
@@ -296,81 +301,100 @@ main {
 }
 
 /*FOOTER SETTINGS*/
-footer{
+footer {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
-footer a{
+
+footer a {
     text-decoration: underline;
     color: var(--primary-color);
 }
 
 @media screen and (min-width:720px) {
-    .media-f-row{
+    .media-f-row {
         display: flex;
         flex-flow: row wrap;
     }
-    .media-size{
+
+    .media-size {
         width: calc(100% / 3);
     }
-    .media-size:first-child{
+
+    .media-size:first-child {
         width: calc((100% / 3) * 2);
     }
-    .media-heigt{
+
+    .media-heigt {
         height: 100%;
     }
+
     #testimonials .cards-border {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .testimonial-img {
         width: 300px;
         height: 300px;
     }
+
     .testimonial-cite {
         width: 50%
     }
-    .media-features-size{
+
+    .media-features-size {
         width: 50%;
     }
-    .about-us-size{
+
+    .about-us-size {
         width: 50%;
     }
-    .bg-presentation-card{
+
+    .bg-presentation-card {
         justify-content: space-between;
     }
 }
+
 @media screen and (min-width:1080px) {
-    .container{
+    .container {
         max-width: 1400px;
         margin: auto;
     }
-    .media-f-row{
+
+    .media-f-row {
         display: flex;
         flex-flow: row wrap;
     }
-    .media-features-size{
+
+    .media-features-size {
         width: calc(100% / 3);
     }
-    .media-planning-size{
+
+    .media-planning-size {
         width: 50%;
     }
-    .media-planning-size:last-child{
+
+    .media-planning-size:last-child {
         align-self: flex-end;
     }
-    .options{
+
+    .options {
         display: block;
     }
-    ul{
+
+    ul {
         display: flex;
         flex-direction: row;
         text-align: center;
     }
-    .burger-menu{
+
+    .burger-menu {
         display: none;
     }
-    .bg-presentation-card{
+
+    .bg-presentation-card {
         justify-content: space-between;
     }
 }
