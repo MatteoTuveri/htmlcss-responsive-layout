@@ -21,8 +21,8 @@
     border: 1px solid var(--debug);
 }
 body{
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 1.7em;
+    line-height: 1.5em;
 }
 .py-10 {
     padding-top: 10px;
@@ -41,6 +41,10 @@ body{
 .px-20 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.p-relative{
+    position: relative;
 }
 
 .t-align-center{
@@ -62,12 +66,18 @@ a{
 }
 
 .btn{
-    padding: 10px 10px;
-    border-radius: 25px;
+    padding: 2px 50px;
+    border-radius: 50px;
+    
+}
+.second-btn{
+    display: inline-block;
+    background-color: var(--color-secondary-color);
+    color:var(--color-light-color);
 }
 
 .cards-border{
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 /* FLEX SETTINGS */
@@ -112,7 +122,11 @@ main{
 }
 .planning-cards{
     background-color: var(--color-bg-card);
+    color: var(--color-text);
 }
 .planning-cards h2{
     color: var(--color-secondary-color);
+}
+.card-image{
+    bottom: -20px;
 }
