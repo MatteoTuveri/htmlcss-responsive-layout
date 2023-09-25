@@ -90,6 +90,13 @@ a {
     color: var(--light-color);
 }
 
+.fourth-btn {
+    display: inline-block;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 10px 50px;
+}
+
 .cards-border {
     border-radius: 25px;
 }
@@ -125,7 +132,6 @@ header {
     z-index: 1000;
     width: 100%;
     height: 80px;
-    min-width: 480px;
 }
 
 nav {
@@ -257,4 +263,22 @@ main {
 /*GET STARTED SECTION SETTINGS*/
 #get-started {
     background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+#get-started h4 {
+    font-weight: lighter;
+}
+
+#get-started h3 {
+    font-size: 2em;
+}
+
+#get-started h2 {
+    font-size: 4em;
+    color: var(--contrast-color);
+}
+
+#get-started a {
+    text-decoration: underline;
 }
