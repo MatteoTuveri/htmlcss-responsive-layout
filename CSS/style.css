@@ -1,19 +1,58 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+
 :root {
-    --debug:black;
-	--color-secondary-color: #0084FD;
-	--color-dark-color: #333333;
-	--color-light-color: #FFFFFF;
-	--color-primary-color: #9792E4;
-	--color-bg-card: #B5DDFF;
-	--color-contrast-color: #FCC060;
-	--color-text: #424242;
+    --debug: black;
+    --color-secondary-color: #0084FD;
+    --color-dark-color: #333333;
+    --color-light-color: #FFFFFF;
+    --color-primary-color: #9792E4;
+    --color-bg-card: #B5DDFF;
+    --color-contrast-color: #FCC060;
+    --color-text: #424242;
 }
-.debug{
+
+/* GENERAL SETTINGS */
+.debug {
     border: 1px solid var(--debug);
+}
+
+.px-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.px-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*HEADER SETTINGS*/
+header {
+    background-color: var(--color-secondary-color);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.img-size {
+    max-width: 100px;
 }
